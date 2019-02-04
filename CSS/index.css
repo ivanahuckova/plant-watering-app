@@ -1,3 +1,12 @@
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -302,10 +311,42 @@ nav .nav-container .nav-items-container .main-nav-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0;
   height: 40vh;
 }
-.flex-section-container-three .flex-item {
+.flex-section-container-three .flex-container {
   width: 30%;
   border: 1px solid #00bab9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex-section-container-three .flex-container img {
+  width: 20%;
+  border-radius: 50%;
+  border: 8px solid #e8f7f8;
+}
+.flex-section-container-three .flex-container .plant1 {
+  margin-top: -50%;
+}
+.flex-section-container-three .flex-container .plant2 {
+  margin-top: 20%;
+}
+.flex-section-container-three .flex-container .plant3 {
+  margin-top: -30%;
+}
+.flex-section-container-three .flex-container .plant4 {
+  margin-top: 60%;
+}
+.flex-section-container-three .flex-container .plant5 {
+  margin-top: 40%;
+}
+.flex-section-container-three .flex-container .plant6 {
+  margin-top: -20%;
+}
+.flex-section-container-three .flex-container .plant7 {
+  margin-top: 30%;
+}
+.flex-section-container-three .flex-container .plant8 {
+  margin-top: -50%;
 }
