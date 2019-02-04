@@ -148,6 +148,18 @@ table {
   justify-content: space-between;
   align-items: center;
 }
+.footer-container {
+  margin: 5% 0 0 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 10vh;
+}
+.footer-container .footer-item {
+  width: 25%;
+  border: 1px solid #00bab9;
+}
 .light-teal {
   background-color: #e8f7f8;
 }
