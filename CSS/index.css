@@ -204,7 +204,7 @@ nav .nav-container .nav-items-container .main-nav-item {
 }
 .flex-section-container-one {
   width: 100vw;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,11 +223,25 @@ nav .nav-container .nav-items-container .main-nav-item {
   letter-spacing: 0.1rem;
   padding-bottom: 3%;
 }
+.flex-section-container-one .main-heading-container h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding: 5% 0;
+}
 .flex-section-container-one .main-heading-container p {
   font-size: 1.3rem;
   padding: 0 5%;
   line-height: 1.5;
   text-align: center;
+}
+.flex-section-container-one .main-heading-container button {
+  background-color: #00bab9;
+  color: white;
+  text-align: center;
+  padding: 1.5% 3%;
+  margin: 5% 0;
+  border: none;
+  font-size: 1rem;
 }
 .flex-section-container-one .main-heading-container .content-container {
   display: flex;
@@ -237,7 +251,7 @@ nav .nav-container .nav-items-container .main-nav-item {
   padding: 4% 2% 0 0;
 }
 .flex-section-container-one .main-heading-container .content-container h2 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   font-weight: bold;
   margin: 0 1%;
 }
@@ -264,14 +278,13 @@ nav .nav-container .nav-items-container .main-nav-item {
 }
 .flex-section-container-two .flex-item {
   width: 45%;
-  border: 1px solid #00bab9;
 }
 .flex-section-container-two .flex-item img {
   width: 100%;
 }
 .flex-section-container-two .flex-item h2 {
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   padding: 5% 0;
 }
 .flex-section-container-two .flex-item p {

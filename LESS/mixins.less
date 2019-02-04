@@ -1,8 +1,16 @@
-#mixins {
-	.display-flex(@direction: row; @justify: space-between; @align: center) {
-		display: flex;
-		flex-direction: @direction;
-		justify-content: @justify;
-		align-items: @align;
-	}
+.display-flex(@direction: row; @justify: space-between; @align: center) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.button() {
+	background-color: @teal;
+	color: white;
+	text-align: center;
+	padding: 1.5% 3%;
+	margin: 5% 0;
+	border: none;
+	font-size: 1rem;
 }
