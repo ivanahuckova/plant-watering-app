@@ -148,6 +148,9 @@ table {
   justify-content: space-between;
   align-items: center;
 }
+.light-teal {
+  background-color: #e8f7f8;
+}
 .jumbotron-container {
   background-color: #e8f7f8;
   width: 100vw;
@@ -155,18 +158,40 @@ table {
   border: 1px solid #00bab9;
   margin-bottom: 5%;
 }
-.heading-section-container {
+.flex-section-container-one {
   width: 100vw;
   height: 70vh;
   border: 1px solid #00bab9;
-  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.heading-section-container .share-container {
+.flex-section-container-one .content-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.flex-section-container-two {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 40vh;
+}
+.flex-section-container-two .flex-item {
+  width: 45%;
+  border: 1px solid #00bab9;
+}
+.flex-section-container-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 40vh;
+}
+.flex-section-container-three .flex-item {
+  width: 30%;
+  border: 1px solid #00bab9;
 }
