@@ -135,6 +135,9 @@ body {
 .teal-bckgnd {
   background-color: #00bab9;
 }
+.margin-top-10 {
+  margin-top: 10%;
+}
 nav {
   position: fixed;
   top: 0;
@@ -163,7 +166,7 @@ nav .nav-container .logo-container h2 {
   padding: 0 10px 0 21px;
 }
 nav .nav-container .nav-items-container {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -185,7 +188,7 @@ nav .nav-container .nav-items-container .main-nav-item {
   height: 10vh;
 }
 .footer-container .footer-item {
-  width: 40%;
+  width: 50%;
   font-size: 0.95rem;
   font-weight: lighter;
 }
@@ -199,12 +202,12 @@ nav .nav-container .nav-items-container .main-nav-item {
 .jumbotron-container {
   background-color: #e8f7f8;
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
   margin-top: 100px;
   display: flex;
 }
 .jumbotron-container img {
-  padding: 7% 0;
+  padding: 0;
   width: 100%;
 }
 .flex-section-container-one {
@@ -225,7 +228,7 @@ nav .nav-container .nav-items-container .main-nav-item {
   font-size: 3.3rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
 }
 .flex-section-container-one .main-heading-container h2 {
   font-size: 2.3rem;
@@ -272,7 +275,7 @@ nav .nav-container .nav-items-container .main-nav-item {
   cursor: pointer;
 }
 .flex-section-container-two {
-  margin: 5% 0;
+  margin: 3% 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -301,6 +304,7 @@ nav .nav-container .nav-items-container .main-nav-item {
   justify-content: space-between;
   padding: 0;
   height: 50vh;
+  margin: 10% 0 10% 0;
 }
 .flex-section-container-three .flex-item-container-mid {
   width: 30%;
@@ -333,6 +337,7 @@ nav .nav-container .nav-items-container .main-nav-item {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 2.5%;
 }
 .flex-section-container-three .flex-item-container img {
   width: 20%;
