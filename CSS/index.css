@@ -129,8 +129,20 @@ table {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.nav-container {
-  position: sticky;
+.light-teal-bckgnd {
+  background-color: #e8f7f8;
+}
+.teal-bckgnd {
+  background-color: #00bab9;
+}
+.white-font-color {
+  color: white;
+}
+nav {
+  position: fixed;
+  width: 100%;
+}
+nav .nav-container {
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -138,18 +150,33 @@ body {
   align-items: center;
   padding: 0 5%;
   background-color: #e8f7f8;
+  font-weight: bold;
 }
-.nav-container .logo-container {
-  border: 1px solid #00bab9;
+nav .nav-container .logo-container {
   width: 20%;
+  display: flex;
+  background-image: url(/assets/heart-teal.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
 }
-.nav-container .nav-items-container {
-  border: 1px solid #00bab9;
-  width: 50%;
+nav .nav-container .logo-container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 10px 0 21px;
+}
+nav .nav-container .nav-items-container {
+  width: 35%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+nav .nav-container .nav-items-container:hover {
+  cursor: pointer;
+}
+nav .nav-container .nav-items-container .main-nav-item {
+  color: white;
+  padding: 43px;
 }
 .footer-container {
   margin: 5% 0 0 2%;
