@@ -6,7 +6,16 @@
 	padding: 0 10%;
 	height: 10vh;
 	.footer-item {
-		width: 25%;
-		border: 1px solid @teal;
+		width: 40%;
+		font-size: @footer-font-size;
+		font-weight: lighter;
+		&:last-child {
+			text-align: right;
+		}
+
+		a {
+			color: @teal;
+			text-decoration: none;
+		}
 	}
 }

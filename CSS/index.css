@@ -185,8 +185,16 @@ nav .nav-container .nav-items-container .main-nav-item {
   height: 10vh;
 }
 .footer-container .footer-item {
-  width: 25%;
-  border: 1px solid #00bab9;
+  width: 40%;
+  font-size: 0.95rem;
+  font-weight: lighter;
+}
+.footer-container .footer-item:last-child {
+  text-align: right;
+}
+.footer-container .footer-item a {
+  color: #00bab9;
+  text-decoration: none;
 }
 .light-teal {
   background-color: #e8f7f8;
@@ -208,7 +216,6 @@ nav .nav-container .nav-items-container .main-nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #00bab9;
 }
 .flex-section-container-one .main-heading-container {
   width: 50%;
