@@ -135,9 +135,6 @@ body {
 .teal-bckgnd {
   background-color: #00bab9;
 }
-.white-font-color {
-  color: white;
-}
 nav {
   position: fixed;
   width: 100%;
@@ -189,9 +186,6 @@ nav .nav-container .nav-items-container .main-nav-item {
 .footer-container .footer-item {
   width: 25%;
   border: 1px solid #00bab9;
-}
-.light-teal {
-  background-color: #e8f7f8;
 }
 .jumbotron-container {
   background-color: #e8f7f8;
