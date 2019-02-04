@@ -40,7 +40,7 @@
 		p {
 			font-size: @p-font-size;
 			padding: 0 5%;
-			line-height: 1.5;
+			line-height: 1.6;
 			text-align: center;
 		}
 		button {
@@ -96,7 +96,7 @@
 		}
 		p {
 			font-size: @p-font-size;
-			line-height: 1.5;
+			line-height: 1.6;
 		}
 	}
 }
@@ -124,7 +124,7 @@
 		}
 		p {
 			font-size: @p-font-size;
-			line-height: 1.5;
+			line-height: 1.6;
 		}
 		button {
 			.button();
@@ -141,30 +141,39 @@
 			width: 20%;
 			border-radius: 50%;
 			border: 8px solid @light-teal;
+			position: relative;
 		}
 		.plant1 {
 			margin-top: -70%;
+			animation: moveUpAndDown 8s ease-out infinite;
 		}
 		.plant2 {
 			margin-top: 20%;
+			animation: moveDownAndUp 7s ease-out infinite;
 		}
 		.plant3 {
 			margin-top: -40%;
+			animation: moveUpAndDown 8s ease-out infinite;
 		}
 		.plant4 {
 			margin-top: 70%;
+			animation: moveDownAndUp 6s ease-out infinite;
 		}
 		.plant5 {
 			margin-top: 40%;
+			animation: moveDownAndUp 5s ease-out infinite;
 		}
 		.plant6 {
 			margin-top: -20%;
+			animation: moveDownAndUp 8s ease-out infinite;
 		}
 		.plant7 {
 			margin-top: 50%;
+			animation: moveUpAndDown 5s ease-out infinite;
 		}
 		.plant8 {
 			margin-top: -70%;
+			animation: moveUpAndDown 4s ease-out infinite;
 		}
 	}
 }

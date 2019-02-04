@@ -1,3 +1,21 @@
+@keyframes moveUpAndDown {
+  100%,
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+}
+@keyframes moveDownAndUp {
+  100%,
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -100px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,6 +160,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 nav .nav-container {
   height: 100px;
@@ -238,7 +257,7 @@ nav .nav-container .nav-items-container .main-nav-item {
 .flex-section-container-one .main-heading-container p {
   font-size: 1.3rem;
   padding: 0 5%;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
 }
 .flex-section-container-one .main-heading-container button {
@@ -296,7 +315,7 @@ nav .nav-container .nav-items-container .main-nav-item {
 }
 .flex-section-container-two .flex-item p {
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .flex-section-container-three {
   display: flex;
@@ -321,7 +340,7 @@ nav .nav-container .nav-items-container .main-nav-item {
 }
 .flex-section-container-three .flex-item-container-mid p {
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .flex-section-container-three .flex-item-container-mid button {
   background-color: #00bab9;
@@ -343,28 +362,37 @@ nav .nav-container .nav-items-container .main-nav-item {
   width: 20%;
   border-radius: 50%;
   border: 8px solid #e8f7f8;
+  position: relative;
 }
 .flex-section-container-three .flex-item-container .plant1 {
   margin-top: -70%;
+  animation: moveUpAndDown 8s ease-out infinite;
 }
 .flex-section-container-three .flex-item-container .plant2 {
   margin-top: 20%;
+  animation: moveDownAndUp 7s ease-out infinite;
 }
 .flex-section-container-three .flex-item-container .plant3 {
   margin-top: -40%;
+  animation: moveUpAndDown 8s ease-out infinite;
 }
 .flex-section-container-three .flex-item-container .plant4 {
   margin-top: 70%;
+  animation: moveDownAndUp 6s ease-out infinite;
 }
 .flex-section-container-three .flex-item-container .plant5 {
   margin-top: 40%;
+  animation: moveDownAndUp 5s ease-out infinite;
 }
 .flex-section-container-three .flex-item-container .plant6 {
   margin-top: -20%;
+  animation: moveDownAndUp 8s ease-out infinite;
 }
 .flex-section-container-three .flex-item-container .plant7 {
   margin-top: 50%;
+  animation: moveUpAndDown 5s ease-out infinite;
 }
 .flex-section-container-three .flex-item-container .plant8 {
   margin-top: -70%;
+  animation: moveUpAndDown 4s ease-out infinite;
 }
