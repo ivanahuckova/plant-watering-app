@@ -135,9 +135,6 @@ body {
 .teal-bckgnd {
   background-color: #00bab9;
 }
-.white-font-color {
-  color: white;
-}
 nav {
   position: fixed;
   top: 0;
@@ -198,8 +195,8 @@ nav .nav-container .nav-items-container .main-nav-item {
   background-color: #e8f7f8;
   width: 100vw;
   height: 80vh;
-  border: 1px solid #00bab9;
-  margin: 2% 0 100px 0;
+  border-bottom: 1px solid #00bab9;
+  margin-top: 100px;
   display: flex;
 }
 .jumbotron-container img {
@@ -208,17 +205,54 @@ nav .nav-container .nav-items-container .main-nav-item {
 }
 .flex-section-container-one {
   width: 100vw;
-  height: 70vh;
+  height: 50vh;
   border: 1px solid #00bab9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-section-container-one .main-heading-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.flex-section-container-one .content-container {
+.flex-section-container-one .main-heading-container h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding-bottom: 3%;
+}
+.flex-section-container-one .main-heading-container p {
+  font-size: 1.3rem;
+  padding: 0 5%;
+  line-height: 1.5;
+  text-align: center;
+}
+.flex-section-container-one .main-heading-container .content-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 2% 0 0;
+}
+.flex-section-container-one .main-heading-container .content-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 1%;
+}
+.flex-section-container-one .main-heading-container .content-container .share-item {
+  width: 6%;
+  background-color: #e8f7f8;
+  margin: 0 1%;
+}
+.flex-section-container-one .main-heading-container .content-container .share-item img {
+  max-width: 50%;
+  padding: 25%;
+}
+.flex-section-container-one .main-heading-container .content-container .share-item:hover {
+  cursor: pointer;
 }
 .flex-section-container-two {
   margin: 5% 0;
