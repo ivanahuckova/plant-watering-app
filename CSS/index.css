@@ -140,6 +140,7 @@ body {
 }
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
 }
 nav .nav-container {
@@ -196,9 +197,14 @@ nav .nav-container .nav-items-container .main-nav-item {
 .jumbotron-container {
   background-color: #e8f7f8;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   border: 1px solid #00bab9;
-  margin-bottom: 5%;
+  margin: 2% 0 100px 0;
+  display: flex;
+}
+.jumbotron-container img {
+  padding: 7% 0;
+  width: 100%;
 }
 .flex-section-container-one {
   width: 100vw;
