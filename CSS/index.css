@@ -179,6 +179,9 @@ body {
 .light-teal-bckgnd {
   background-color: #e8f7f8;
 }
+.margin-bottom-5 {
+  margin-bottom: 5%;
+}
 .animation-class {
   animation: changeColor 3s linear;
 }
@@ -393,7 +396,7 @@ nav .navbar-scroll {
 }
 .flex-section-container-one-item {
   width: 100vw;
-  margin: 5% 0;
+  margin: 5% 0 0 0;
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: row;
@@ -435,7 +438,7 @@ nav .navbar-scroll {
   padding: 6% 0;
 }
 .flex-section-container-one-item .one-flex-item-container p {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   padding: 0 5%;
 }
@@ -586,7 +589,7 @@ nav .navbar-scroll {
   padding-bottom: 6%;
 }
 .flex-section-container-two-items .flex-item p {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 @media (max-width: 1000px) {
@@ -648,7 +651,7 @@ nav .navbar-scroll {
   padding: 5% 0;
 }
 .flex-section-container-three-items .flex-mid-item-container p {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 @media (max-width: 1000px) {
