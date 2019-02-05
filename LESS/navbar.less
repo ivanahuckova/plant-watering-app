@@ -5,7 +5,7 @@ nav {
 	z-index: 2;
 
 	.nav-container {
-		height: 100px;
+		height: 150px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -13,6 +13,11 @@ nav {
 		padding: 0 5%;
 		background-color: @light-teal;
 		font-weight: bold;
+		@media @tablet {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 
 		.logo-container {
 			width: 20%;
@@ -20,6 +25,13 @@ nav {
 			background-image: url(/assets/heart-teal.png);
 			background-size: 20px;
 			background-repeat: no-repeat;
+			@media @tablet {
+				padding: 10px 0;
+				width: 100%;
+				justify-content: center;
+				background-position: 35% 80%;
+				background-size: 30px;
+			}
 			h2 {
 				font-size: @logo-font-size;
 				font-weight: 700;
@@ -33,6 +45,9 @@ nav {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			@media @tablet {
+				width: 100%;
+			}
 			&:hover {
 				cursor: pointer;
 			}
@@ -40,6 +55,10 @@ nav {
 			.main-nav-item {
 				color: white;
 				padding: 43px;
+				@media @tablet {
+					background-color: @light-teal;
+					color: @black;
+				}
 			}
 		}
 	}
