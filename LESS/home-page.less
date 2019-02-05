@@ -5,6 +5,9 @@
 	height: 70vh;
 	margin-top: 100px;
 	display: flex;
+	@media @tablet {
+		margin-top: 120px;
+	}
 	img {
 		padding: 0;
 		width: 100%;
@@ -24,6 +27,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		@media @tablet {
+			width: 80%;
+		}
 
 		h1 {
 			font-size: @h1-font-size;
@@ -83,11 +89,21 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 10%;
-	height: 45vh;
+	@media @tablet {
+		justify-content: center;
+		align-items: center;
+	}
 	.flex-item {
 		width: 45%;
+		@media @tablet {
+			width: 80%;
+			text-align: center;
+		}
 		img {
 			width: 100%;
+			@media @tablet {
+				padding-bottom: 10%;
+			}
 		}
 		h2 {
 			font-weight: bold;
@@ -108,7 +124,10 @@
 	justify-content: space-between;
 	padding: 0;
 	height: 50vh;
-	margin: 10% 0 10% 0;
+	margin: 10% 0;
+	@media @tablet {
+		margin: 5% 0;
+	}
 
 	.flex-item-container-mid {
 		width: 30%;
@@ -125,6 +144,9 @@
 		p {
 			font-size: @p-font-size;
 			line-height: 1.6;
+			@media @tablet {
+				display: none;
+			}
 		}
 		button {
 			.button();

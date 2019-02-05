@@ -5,7 +5,7 @@ nav {
 	z-index: 2;
 
 	.nav-container {
-		height: 150px;
+		height: 120px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -26,10 +26,10 @@ nav {
 			background-size: 20px;
 			background-repeat: no-repeat;
 			@media @tablet {
-				padding: 10px 0;
+				padding: 0;
 				width: 100%;
 				justify-content: center;
-				background-position: 35% 80%;
+				background-position: 35% 55%;
 				background-size: 30px;
 			}
 			h2 {
@@ -47,6 +47,7 @@ nav {
 			align-items: center;
 			@media @tablet {
 				width: 100%;
+				padding: 4% 0 0 0;
 			}
 			&:hover {
 				cursor: pointer;
@@ -56,8 +57,8 @@ nav {
 				color: white;
 				padding: 43px;
 				@media @tablet {
-					background-color: @light-teal;
 					color: @black;
+					padding: 0;
 				}
 			}
 		}
