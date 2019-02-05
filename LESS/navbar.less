@@ -5,7 +5,7 @@ nav {
 	z-index: 2;
 
 	.nav-container {
-		height: 120px;
+		height: 100px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -17,6 +17,11 @@ nav {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			height: 120px;
+		}
+
+		@media @mobile {
+			height: 120px;
 		}
 
 		.logo-container {
@@ -29,16 +34,17 @@ nav {
 				padding: 0;
 				width: 100%;
 				justify-content: center;
-				background-position: 33% 55%;
-				background-size: 30px;
-			}
-			@media @heart-tablet {
-				background-position: 30% 55%;
+				background-image: none;
+				// background-position: 33% 55%;
+				// background-size: 30px;
 			}
 			h2 {
 				font-size: @logo-font-size;
 				font-weight: 700;
 				padding: 0 10px 0 21px;
+				@media @mobile {
+					padding-bottom: 25px;
+				}
 			}
 		}
 
