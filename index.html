@@ -7,18 +7,17 @@
 		<link rel="stylesheet" href="CSS/index.css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
 		<script src="script.js" async></script>
-		<title>Planto</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" async></script>
+		<title>Planto - The plant watering app</title>
 	</head>
 	<body>
 		<!-- HEADER -->
 		<header>
-			<!-- MOUSE FOLLOWING ITEM -->
-			<div id="mouse-move-item" class="js--move-heart"></div>
 			<!-- NABAR -->
 			<nav>
 				<div class="nav-container">
 					<div class="logo-container">
-						<h2>Planto</h2>
+						<h2 id="logo">Planto</h2>
 						<div class="slogan-container">
 							<div>plant</div>
 							<div>watering</div>
@@ -29,7 +28,7 @@
 						<div>App</div>
 						<div>Blog</div>
 						<div>Login</div>
-						<div class="teal-bckgnd main-nav-item">Join Us</div>
+						<div class="main-nav-item" id="main-nav-item">Join Us</div>
 					</div>
 				</div>
 			</nav>
@@ -39,59 +38,65 @@
 				<img src="/assets/illustrations/jumbotron-img.svg" alt="Calendar for watering of plants" />
 			</div>
 
+			<!-- MOUSE FOLLOWING ITEM -->
+			<div id="mouse-move-item" class="js--move-heart"></div>
+
 			<!-- MAIN HEADING -->
-			<div class="flex-section-container-one">
-				<div class="main-heading-container">
-					<h1>Plant watering app</h1>
+			<div class="flex-section-container-one-item">
+				<div class="one-flex-item-container">
+					<h1>Never forget to water your plants again!</h1>
 					<p>
-						Flowers app Lorem ipsum dolor sit amet, per natum feugiat tacimates ut. Eu his eros concludaturque. Velit atomorum id ius, an exerci
-						possim mea. Flowers app Lorem ipsum dolor sit.
+						It’s easy to forget to water your plants, but it doesn’t have to be. Planto reminds you to water plants through game-like notifications,
+						plant-selfies, and time-lapse videos so you can watch your Happy Plants grow baby grow.
 					</p>
-					<div class="content-container">
+					<div class="inline-content-container">
 						<h3>Share with Friends</h3>
 						<div class="share-item">
-							<img src="assets/logo-instagram.png" alt="Instagram logo" />
+							<a href="https://www.instagram.com/explore/tags/plants/?hl=en"><img src="assets/logo-instagram.png" alt="Instagram logo"/></a>
 						</div>
 						<div class="share-item">
-							<img src="assets/logo-fb.png" alt="Facebook logo" />
+							<a href="https://www.facebook.com"><img src="assets/logo-fb.png" alt="Facebook logo"/></a>
 						</div>
 						<div class="share-item">
-							<img src="assets/logo-twitter.png" alt="Twitter logo" />
+							<a href="https://www.facebook.com"><img src="assets/logo-twitter.png" alt="Twitter logo"/></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
+
 		<!-- SECTION 1 -->
-		<section class="flex-section-container-two">
+		<section class="flex-section-container-two-items">
 			<div class="flex-item flex-text">
-				<h2>Our amazing app...</h2>
+				<h2>Join thousands of others...</h2>
 				<p>
-					Flowers app Lorem ipsum dolor sit amet, per natum feugiat tacimates ut. Eu his eros concludaturque. Velit atomorum id ius, an exerci possim
-					mea. Flowers app Lorem ipsum dolor sit. Flowers app Lorem ipsum dolor sit.
+					What started off as a fun learning exercise to learn how to develop iOS apps has become plants savers around the world. Thousands of people
+					are using Planto to keep plants happy and healthy. Planto reminds you to water plants through game-like notifications, plant-selfies, and
+					time-lapse videos so you can watch your happy plants grow baby grow.
 				</p>
 			</div>
 			<div class="flex-item flex-img">
 				<img src="/assets/illustrations/flower-aranging.svg" alt="Arranging of flowers" />
 			</div>
 		</section>
+
 		<!-- SECTION 2 -->
-		<section class="flex-section-container-three">
-			<div class="flex-item-container">
+		<section class="flex-section-container-three-items">
+			<div class="flex-floating-items-container">
 				<img class="plant1" src="assets/plants/plant1.png" alt="Plant" />
 				<img class="plant2" src="assets/plants/plant2.png" alt="Plant" />
 				<img class="plant3" src="assets/plants/plant3.png" alt="Plant" />
 				<img class="plant4" src="assets/plants/plant4.png" alt="Plant" />
 			</div>
-			<div class="flex-item-container-mid">
+			<div class="flex-mid-item-container">
 				<h2>Interested in Newsletter?</h2>
 				<p>
-					Flowers app Lorem ipsum dolor sit amet, per natum feugiat tacimates ut. Eu his eros concludaturque. Velit atomorum id ius, an exerci possim
-					mea. Flowers app Lorem ipsum.
+					Each day we collate the most important plants and most interesting news stories for you. Get a daily or weekly update of the top plant news
+					delivered straight to your inbox. Sign up now - it's free, and you can unsubscribe at any time.
 				</p>
 				<button>Sign Up here!</button>
 			</div>
-			<div class="flex-item-container">
+			<div class="flex-floating-items-container">
 				<img class="plant5" src="assets/plants/plant5.png" alt="Plant" />
 				<img class="plant6" src="assets/plants/plant6.png" alt="Plant" />
 				<img class="plant7" src="assets/plants/plant7.png" alt="Plant" />
@@ -99,33 +104,39 @@
 			</div>
 		</section>
 		<!-- SECTION 3 -->
-		<section class="flex-section-container-two">
+		<section class="flex-section-container-two-items">
 			<div class="flex-item flex-img">
 				<img src="/assets/illustrations/analytics.svg" alt="Arranging of flowers" />
 			</div>
 			<div class="flex-item flex-text">
 				<h2>Your plant analytics...</h2>
 				<p>
-					Flowers app Lorem ipsum dolor sit amet, per natum feugiat tacimates ut. Eu his eros concludaturque. Velit atomorum id ius, an exerci possim
-					mea. Flowers app Lorem ipsum dolor sit. Flowers app Lorem ipsum dolor sit.
+					Planto is amazing in making sure that your plants are in their best shape. Enjoy our analytics tool to review your watering habbits. Planto
+					helps you to keep plants happy and healthy. Planto reminds you to water plants through game-like notifications, plant-selfies, and
+					time-lapse videos so you can watch your happy plants grow baby grow.
 				</p>
-			</div>
-		</section>
-		<!-- SECTION 4 -->
-		<section class="flex-section-container-one light-teal-bckgnd margin-top-10 ">
-			<div class="main-heading-container">
-				<h2>Ready to join us?</h2>
-				<p>
-					Flowers app Lorem ipsum dolor sit amet, per natum feugiat tacimates ut. Eu his eros concludaturque. Velit atomorum id ius, an exerci possim
-					mea. Flowers app Lorem ipsum.
-				</p>
-				<button>Yes! Let's do this!</button>
 			</div>
 		</section>
 
-		<footer class="footer-container">
-			<div class="footer-item">© Copyright 2019 <a href="">Ivana Huckova</a>. All rights reserved.</div>
-			<div class="footer-item">@planto on <a href="">Instagram</a> and <a href="">Twitter</a>.</div>
+		<!-- SECTION 4 -->
+		<section class="flex-section-container-one-item light-teal-bckgnd">
+			<div class="one-flex-item-container">
+				<h2>Ready to join us?</h2>
+				<p>
+					Download our amazing app and join the comunity of plant lovers.Planto is amazing in making sure that your plants are in their best shape.
+					Join us now - it's free.
+				</p>
+				<button id="apply-button">Yes! Let's do this!</button>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-item">© Copyright 2019 <a href="">Ivana Huckova</a>. All rights reserved.</div>
+				<div class="footer-item">@planto on <a href="">Instagram</a> and <a href="">Twitter</a>.</div>
+			</div>
+
+			<img id="plant-img" src="assets/plant.png" alt="Plant animation" />
 		</footer>
 	</body>
 </html>

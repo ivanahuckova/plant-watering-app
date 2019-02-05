@@ -13,6 +13,9 @@ nav {
 		padding: 0 5%;
 		background-color: @light-teal;
 		font-weight: bold;
+		&:hover {
+			cursor: pointer;
+		}
 		@media @tablet {
 			flex-direction: column;
 			justify-content: center;
@@ -64,11 +67,16 @@ nav {
 
 			.main-nav-item {
 				color: white;
+				background-color: @teal;
 				padding: 43px;
 				@media @tablet {
-					color: @black;
+					color: white;
 					padding: 0;
 				}
+			}
+			.main-nav-item-reverse {
+				color: @teal;
+				background-color: white;
 			}
 		}
 	}

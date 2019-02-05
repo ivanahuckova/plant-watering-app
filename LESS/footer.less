@@ -1,5 +1,5 @@
 .footer-container {
-	margin: 5% 0 0 2%;
+	margin: 5% 0 -2% 2%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -24,5 +24,18 @@
 			color: @teal;
 			text-decoration: none;
 		}
+	}
+}
+
+#plant-img {
+	width: 50px;
+	padding: 20px;
+	position: relative;
+	left: 48%;
+	@media @mobile {
+		left: 43%;
+	}
+	&:hover {
+		cursor: pointer;
 	}
 }

@@ -6,17 +6,6 @@ body {
 	background-color: @light-teal;
 }
 
-.teal-bckgnd {
-	background-color: @teal;
-	@media @tablet {
-		background-color: @light-teal;
-	}
-}
-
-.margin-top-10 {
-	margin-top: 10%;
-}
-
 .js--move-heart {
 	height: 15px;
 	width: 15px;
@@ -43,4 +32,27 @@ body {
 		top: -7px;
 		left: 0px;
 	}
+}
+
+.animation-class {
+	animation: changeColor 3s linear;
+}
+
+/* Grow Hover*/
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	cursor: pointer;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	transform: scale(1.1);
 }
