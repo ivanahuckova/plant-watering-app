@@ -1,16 +1,15 @@
 .footer-container {
 	margin: 5% 0 -2% 2%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	.display-flex(no-wrap, row, space-between, center);
 	padding: 0 10%;
 	height: 10vh;
 	@media @tablet {
-		padding: 0 1%;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
-
 	@media @mobile {
-		padding: 0;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.footer-item {
 		width: 50%;
@@ -18,6 +17,13 @@
 		font-weight: lighter;
 		&:last-child {
 			text-align: right;
+		}
+		@media @tablet {
+			width: 100%;
+			text-align: center;
+			&:last-child {
+				text-align: center;
+			}
 		}
 
 		a {
@@ -32,9 +38,14 @@
 	padding: 20px;
 	position: relative;
 	left: 48%;
+
+	@media @tablet {
+		left: 45%;
+	}
 	@media @mobile {
 		left: 43%;
 	}
+
 	&:hover {
 		cursor: pointer;
 	}

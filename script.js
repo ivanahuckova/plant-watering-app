@@ -13,8 +13,8 @@ window.onscroll = function() {
 const _el = document.getElementById("mouse-move-item");
 window.addEventListener("mousemove", followMouse);
 function followMouse() {
-	_el.style.top = event.pageY + 20 + "px";
-	_el.style.left = event.pageX + 20 + "px";
+	_el.style.top = event.pageY + 10 + "px";
+	_el.style.left = event.pageX + 15 + "px";
 }
 
 //Function to change color of logo when clicked
