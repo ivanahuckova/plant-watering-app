@@ -101,9 +101,6 @@
 		}
 		img {
 			width: 100%;
-			@media @tablet {
-				padding-bottom: 10%;
-			}
 		}
 		h2 {
 			font-weight: bold;
@@ -113,6 +110,18 @@
 		p {
 			font-size: @p-font-size;
 			line-height: 1.6;
+		}
+	}
+	.flex-text {
+		@media @tablet {
+			width: 65%;
+			padding: 0 10px;
+		}
+	}
+
+	.flex-img {
+		@media @tablet {
+			width: 30%;
 		}
 	}
 }

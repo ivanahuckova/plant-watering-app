@@ -196,8 +196,13 @@ nav .nav-container .logo-container {
     padding: 0;
     width: 100%;
     justify-content: center;
-    background-position: 35% 55%;
+    background-position: 33% 55%;
     background-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  nav .nav-container .logo-container {
+    background-position: 30% 55%;
   }
 }
 nav .nav-container .logo-container h2 {
@@ -241,7 +246,7 @@ nav .nav-container .nav-items-container .main-nav-item {
 }
 @media (max-width: 1000px) {
   .footer-container {
-    padding: 0 3%;
+    padding: 0 1%;
   }
 }
 .footer-container .footer-item {
@@ -367,11 +372,6 @@ nav .nav-container .nav-items-container .main-nav-item {
 .flex-section-container-two .flex-item img {
   width: 100%;
 }
-@media (max-width: 1000px) {
-  .flex-section-container-two .flex-item img {
-    padding-bottom: 10%;
-  }
-}
 .flex-section-container-two .flex-item h2 {
   font-weight: bold;
   font-size: 2.3rem;
@@ -380,6 +380,17 @@ nav .nav-container .nav-items-container .main-nav-item {
 .flex-section-container-two .flex-item p {
   font-size: 1.3rem;
   line-height: 1.6;
+}
+@media (max-width: 1000px) {
+  .flex-section-container-two .flex-text {
+    width: 65%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .flex-section-container-two .flex-img {
+    width: 30%;
+  }
 }
 .flex-section-container-three {
   display: flex;
