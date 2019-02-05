@@ -179,6 +179,33 @@ body {
 .margin-top-10 {
   margin-top: 10%;
 }
+.js--move-heart {
+  height: 15px;
+  width: 15px;
+  transform: rotate(-45deg);
+  position: absolute;
+  background-color: #00bab9;
+}
+.js--move-heart:after {
+  background-color: #00bab9;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0px;
+  left: 7px;
+}
+.js--move-heart:before {
+  background-color: #00bab9;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -7px;
+  left: 0px;
+}
 nav {
   position: fixed;
   top: 0;

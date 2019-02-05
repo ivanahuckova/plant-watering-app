@@ -16,3 +16,31 @@ body {
 .margin-top-10 {
 	margin-top: 10%;
 }
+
+.js--move-heart {
+	height: 15px;
+	width: 15px;
+	transform: rotate(-45deg);
+	position: absolute;
+	background-color: @teal;
+	&:after {
+		background-color: @teal;
+		content: "";
+		border-radius: 50%;
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		top: 0px;
+		left: 7px;
+	}
+	&:before {
+		background-color: @teal;
+		content: "";
+		border-radius: 50%;
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		top: -7px;
+		left: 0px;
+	}
+}
