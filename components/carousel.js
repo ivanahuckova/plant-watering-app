@@ -4,7 +4,6 @@ class Carousel {
 		this.leftBtn = this.carousel.querySelector(".left-button");
 		this.rightBtn = this.carousel.querySelector(".right-button");
 		this.images = Array.from(document.querySelectorAll(".carousel img"));
-		console.log(this.images);
 		this.currentIndex = 0;
 		this.length = this.images.length;
 		this.images[0].classList.add("img-active");
@@ -36,5 +35,3 @@ const carousel = document.querySelectorAll(".carousel");
 carousel.forEach(c => {
 	return new Carousel(c);
 });
-
-console.log(carousel);
