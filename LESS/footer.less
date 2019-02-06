@@ -1,10 +1,16 @@
 .footer-container {
-	margin: 5% 0 0 2%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	margin: 5% 0 -2% 2%;
+	.display-flex(no-wrap, row, space-between, center);
 	padding: 0 10%;
 	height: 10vh;
+	@media @tablet {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media @mobile {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	.footer-item {
 		width: 50%;
 		font-size: @footer-font-size;
@@ -12,10 +18,35 @@
 		&:last-child {
 			text-align: right;
 		}
+		@media @tablet {
+			width: 100%;
+			text-align: center;
+			&:last-child {
+				text-align: center;
+			}
+		}
 
 		a {
 			color: @teal;
 			text-decoration: none;
 		}
+	}
+}
+
+#plant-img {
+	width: 50px;
+	padding: 20px;
+	position: relative;
+	left: 48%;
+
+	@media @tablet {
+		left: 45%;
+	}
+	@media @mobile {
+		left: 43%;
+	}
+
+	&:hover {
+		cursor: pointer;
 	}
 }

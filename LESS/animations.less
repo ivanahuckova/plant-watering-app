@@ -1,3 +1,4 @@
+//All animations used on website
 @keyframes moveUpAndDown {
 	100%,
 	0% {
@@ -15,5 +16,39 @@
 	}
 	50% {
 		top: -100px;
+	}
+}
+
+@keyframes moveDownAndUpMobile {
+	100%,
+	0% {
+		top: 0;
+	}
+	50% {
+		top: -30px;
+	}
+}
+
+@keyframes moveUpAndDownMobile {
+	100%,
+	0% {
+		top: 0;
+	}
+	50% {
+		top: 25px;
+	}
+}
+
+@keyframes changeColor {
+	0% {
+		color: black;
+	}
+
+	30% {
+		color: @teal;
+	}
+
+	70% {
+		color: white;
 	}
 }

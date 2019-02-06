@@ -13,6 +13,16 @@ nav {
 		padding: 0 5%;
 		background-color: @light-teal;
 		font-weight: bold;
+		&:hover {
+			cursor: pointer;
+		}
+
+		@media @mobile {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 120px;
+		}
 
 		.logo-container {
 			width: 20%;
@@ -20,10 +30,21 @@ nav {
 			background-image: url(/assets/heart-teal.png);
 			background-size: 20px;
 			background-repeat: no-repeat;
+			// @media @tablet {
+			// 	padding: 0;
+			// 	width: 100%;
+			// 	justify-content: center;
+			// 	background-image: none;
+			// background-position: 33% 55%;
+			// background-size: 30px;
+			// }
 			h2 {
 				font-size: @logo-font-size;
 				font-weight: 700;
 				padding: 0 10px 0 21px;
+				@media @mobile {
+					padding-bottom: 25px;
+				}
 			}
 		}
 
@@ -33,14 +54,33 @@ nav {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			@media @tablet {
+				width: 54%;
+			}
+			@media @mobile {
+				width: 100%;
+				padding: 4% 0 0 0;
+			}
 			&:hover {
 				cursor: pointer;
 			}
 
 			.main-nav-item {
 				color: white;
+				background-color: @teal;
 				padding: 43px;
+				@media @mobile {
+					color: white;
+					padding: 0;
+				}
+			}
+			.main-nav-item-reverse {
+				color: @teal;
+				background-color: white;
 			}
 		}
+	}
+	.navbar-scroll {
+		background-color: white;
 	}
 }
