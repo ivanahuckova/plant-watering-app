@@ -1,0 +1,70 @@
+// HEADING
+.main-site-heading-container {
+	margin-top: 140px;
+	margin-bottom: 50px;
+	padding: 0 5%;
+	@media @tablet {
+		margin-top: 140px;
+	}
+	@media @mobile {
+		margin-top: 160px;
+	}
+	.display-flex(no-wrap, row, center, center);
+	text-align: center;
+	h2 {
+		.h2-font-style();
+	}
+}
+
+//BLOG POSTS
+.blog-posts-container {
+	.display-flex(no-wrap, column, center, center);
+	.blog-post {
+		width: 75%;
+		border: 3px solid @teal;
+		border-radius: 5px;
+		height: 20vh;
+		overflow: hidden;
+		padding: 20px 35px;
+		margin: 25px;
+		box-sizing: border-box;
+		position: relative;
+		background-color: @light-teal;
+		@media @tablet {
+			width: 75%;
+			height: 20vh;
+		}
+		@media @mobile {
+			width: 95%;
+			height: 25vh;
+		}
+	}
+	h3 {
+		.h3-font-style();
+	}
+	.date {
+		.p-font-style();
+		padding: 0;
+	}
+	p {
+		.p-font-style();
+		padding: 60px 0 30px;
+	}
+	.close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.expand-button {
+		.p-font-style();
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		color: @teal;
+		cursor: pointer;
+		background-color: transparent;
+	}
+	.blog-open {
+		height: auto;
+	}
+}

@@ -320,6 +320,9 @@ nav .nav-container .nav-items-container {
     background-color: white;
   }
 }
+nav .nav-container .nav-items-container a:hover {
+  color: #00bab9;
+}
 nav .nav-container .nav-items-container .main-nav-item {
   color: white;
   background-color: #00bab9;
@@ -785,6 +788,96 @@ nav .navbar-scroll {
 .flex-section-container-three-items .flex-floating-items-container .plant8 {
   margin-top: -70%;
   animation: moveUpAndDown 4s ease-out infinite;
+}
+.main-site-heading-container {
+  margin-top: 140px;
+  margin-bottom: 50px;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .main-site-heading-container {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .main-site-heading-container {
+    margin-top: 160px;
+  }
+}
+.main-site-heading-container h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.blog-posts-container {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog-posts-container .blog-post {
+  width: 75%;
+  border: 3px solid #00bab9;
+  border-radius: 5px;
+  height: 20vh;
+  overflow: hidden;
+  padding: 20px 35px;
+  margin: 25px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #e8f7f8;
+}
+@media (max-width: 1000px) {
+  .blog-posts-container .blog-post {
+    width: 75%;
+    height: 20vh;
+  }
+}
+@media (max-width: 600px) {
+  .blog-posts-container .blog-post {
+    width: 95%;
+    height: 25vh;
+  }
+}
+.blog-posts-container h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.blog-posts-container .date {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  padding: 0;
+}
+.blog-posts-container p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  padding: 60px 0 30px;
+}
+.blog-posts-container .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.blog-posts-container .expand-button {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #00bab9;
+  cursor: pointer;
+  background-color: transparent;
+}
+.blog-posts-container .blog-open {
+  height: auto;
 }
 .carousel-container {
   display: flex;

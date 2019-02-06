@@ -14,7 +14,8 @@
 		/>
 		<script src="script.js" async></script>
 		<script src="components/carousel.js" async></script>
-		<script src="components/navbar.js" async></script>
+		<script src="components/dropdown.js" async></script>
+		<script src="components/blog.js" async></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" async></script>
 		<title>🌵 Planto - The plant watering app</title>
 	</head>
@@ -25,7 +26,7 @@
 			<nav>
 				<div class="nav-container">
 					<div class="logo-container">
-						<h2 id="logo">Planto</h2>
+						<h2 id="logo"><a href="index.html"></a>Planto</a></h2>
 						<div class="slogan-container">
 							<div class="nav-slogan">plant</div>
 							<div class="nav-slogan">watering</div>
@@ -43,14 +44,13 @@
 					</div>
 				</div>
 			</nav>
+			<!-- MOUSE FOLLOWING ITEM -->
+			<div id="mouse-move-item" class="js--move-heart"></div>
 
 			<!-- JUMBOTRON -->
 			<div class="jumbotron-container">
 				<img src="/assets/illustrations/jumbotron-img.svg" alt="Calendar for watering of plants" />
 			</div>
-
-			<!-- MOUSE FOLLOWING ITEM -->
-			<div id="mouse-move-item" class="js--move-heart"></div>
 
 			<!-- MAIN HEADING -->
 			<div class="flex-section-container-one-item">
