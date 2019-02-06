@@ -18,9 +18,6 @@ nav {
 		}
 
 		@media @mobile {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 			height: 120px;
 		}
 
@@ -54,8 +51,7 @@ nav {
 				width: 54%;
 			}
 			@media @mobile {
-				width: 100%;
-				padding: 4% 0 0 0;
+				display: none;
 			}
 			&:hover {
 				cursor: pointer;
@@ -73,6 +69,16 @@ nav {
 			.main-nav-item-reverse {
 				color: @teal;
 				background-color: white;
+			}
+		}
+		.nav-items-mobile-menu {
+			display: none;
+			@media @mobile {
+				display: flex;
+				i {
+					font-size: 4rem;
+					cursor: pointer;
+				}
 			}
 		}
 	}

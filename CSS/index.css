@@ -184,6 +184,21 @@ body {
 .margin-bottom-5 {
   margin-bottom: 5%;
 }
+@media (max-width: 600px) {
+  .mobile-display-none {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .desktop-tablet-display-none {
+    display: none;
+  }
+}
+@media (min-width: 1001px) {
+  .desktop-tablet-display-none {
+    display: none;
+  }
+}
 .animation-class {
   animation: changeColor 3s linear;
 }
@@ -251,9 +266,6 @@ nav .nav-container:hover {
 }
 @media (max-width: 600px) {
   nav .nav-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 120px;
   }
 }
@@ -292,8 +304,7 @@ nav .nav-container .nav-items-container {
 }
 @media (max-width: 600px) {
   nav .nav-container .nav-items-container {
-    width: 100%;
-    padding: 4% 0 0 0;
+    display: none;
   }
 }
 nav .nav-container .nav-items-container:hover {
@@ -313,6 +324,18 @@ nav .nav-container .nav-items-container .main-nav-item {
 nav .nav-container .nav-items-container .main-nav-item-reverse {
   color: #00bab9;
   background-color: white;
+}
+nav .nav-container .nav-items-mobile-menu {
+  display: none;
+}
+@media (max-width: 600px) {
+  nav .nav-container .nav-items-mobile-menu {
+    display: flex;
+  }
+  nav .nav-container .nav-items-mobile-menu i {
+    font-size: 4rem;
+    cursor: pointer;
+  }
 }
 nav .navbar-scroll {
   background-color: white;
