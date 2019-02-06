@@ -853,14 +853,17 @@ nav .navbar-scroll {
 .blog-posts-container .date {
   font-size: 1.8rem;
   line-height: 1.6;
-  padding: 0;
+}
+.blog-posts-container .blog-text {
+  display: none;
+}
+.blog-posts-container .text-display-none {
+  display: flex;
+  padding: 30px 0;
 }
 .blog-posts-container p {
   font-size: 1.8rem;
   line-height: 1.6;
-}
-.blog-posts-container .text-display-none {
-  display: none;
 }
 .blog-posts-container .close {
   position: absolute;
