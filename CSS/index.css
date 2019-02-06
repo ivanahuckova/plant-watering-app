@@ -402,7 +402,7 @@ nav .navbar-scroll {
 }
 .flex-section-container-one-item {
   width: 100vw;
-  margin: 5% 0 0 0;
+  margin: 5% 0 5% 0;
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: row;
@@ -749,6 +749,7 @@ nav .navbar-scroll {
   justify-content: center;
   align-items: center;
   margin: 10% 0;
+  text-align: center;
 }
 .carousel-container h2 {
   font-size: 3.5rem;
@@ -768,6 +769,11 @@ nav .navbar-scroll {
   overflow: hidden;
   max-width: 70%;
 }
+@media (max-width: 600px) {
+  .carousel {
+    max-width: 95%;
+  }
+}
 .carousel .left-button,
 .carousel .right-button {
   display: flex;
@@ -784,20 +790,42 @@ nav .navbar-scroll {
   height: 50px;
   cursor: pointer;
 }
+@media (max-width: 600px) {
+  .carousel .left-button,
+  .carousel .right-button {
+    background-color: transparent;
+  }
+}
 .carousel .left-button:hover,
 .carousel .right-button:hover {
   color: white;
   background-color: #00bab9;
+}
+@media (max-width: 600px) {
+  .carousel .left-button:hover,
+  .carousel .right-button:hover {
+    background-color: transparent;
+  }
 }
 .carousel .left-button {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
 }
+@media (max-width: 600px) {
+  .carousel .left-button {
+    left: 10px;
+  }
+}
 .carousel .right-button {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
+}
+@media (max-width: 600px) {
+  .carousel .right-button {
+    right: 10px;
+  }
 }
 .carousel img {
   width: 100%;
