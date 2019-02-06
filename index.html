@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="CSS/index.css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
 		<script src="script.js" async></script>
+		<script src="components/carousel.js" async></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" async></script>
 		<title>💚 Planto - The plant watering app</title>
 	</head>
@@ -19,9 +20,9 @@
 					<div class="logo-container">
 						<h2 id="logo">Planto</h2>
 						<div class="slogan-container">
-							<div>plant</div>
-							<div>watering</div>
-							<div>tool</div>
+							<div class="nav-slogan">plant</div>
+							<div class="nav-slogan">watering</div>
+							<div class="nav-slogan">tool</div>
 						</div>
 					</div>
 					<div class="nav-items-container">
@@ -80,17 +81,17 @@
 			</div>
 		</section>
 
-		<!-- SECTION 2 -->
-		<section class="flex-section-container-one-item">
-			<div class="carousel-container margin-bottom-5">
-				<h2>
-					Check out our beautiful 🌵 plants...
-				</h2>
-				<div class="image-container">
-					<img id="left-arrow" src="/assets/left-arrow.png" />
-					<img src="assets/carousel-photos/plants-photo1.jpeg" alt="Photo of the flower" />
-					<img id="right-arrow" src="/assets/right-arrow.png" />
-				</div>
+		<!-- SECTION 2 CAROUSEL -->
+		<section class="carousel-container">
+			<h2>Check out our 🌵 plants</h2>
+			<div class="carousel">
+				<div class="left-button"><</div>
+				<img src="assets/carousel-photos/plants-photo1.jpeg" alt="Photo of the flower" />
+				<img src="assets/carousel-photos/plants-photo1.jpeg" alt="Photo of the flower" />
+				<img src="assets/carousel-photos/plants-photo1.jpeg" alt="Photo of the flower" />
+				<img src="assets/carousel-photos/plants-photo1.jpeg" alt="Photo of the flower" />
+				<img src="assets/carousel-photos/plants-photo1.jpeg" alt="Photo of the flower" />
+				<div class="right-button">></div>
 			</div>
 		</section>
 

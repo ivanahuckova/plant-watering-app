@@ -95,17 +95,25 @@
 		}
 		.image-container {
 			width: 80%;
-			max-height: 70%;
+			overflow: hidden;
+			position: relative;
 			@media @mobile {
 				width: 100%;
 			}
 			.display-flex(no-wrap, row, space-evenly, center);
+
 			img {
-				max-width: 60%;
-				@media @tablet {
-					max-width: 90%;
+				display: none;
+				.img-active {
+					display: flex;
+					width: 60%;
+					animation: fade 1s linear;
+					@media @tablet {
+						max-width: 90%;
+					}
 				}
 			}
+
 			#left-arrow {
 				width: 3%;
 				&:hover {

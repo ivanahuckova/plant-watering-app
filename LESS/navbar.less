@@ -30,14 +30,9 @@ nav {
 			background-image: url(/assets/heart-teal.png);
 			background-size: 20px;
 			background-repeat: no-repeat;
-			// @media @tablet {
-			// 	padding: 0;
-			// 	width: 100%;
-			// 	justify-content: center;
-			// 	background-image: none;
-			// background-position: 33% 55%;
-			// background-size: 30px;
-			// }
+			.nav-slogan {
+				font-size: @nav-font-size;
+			}
 			h2 {
 				font-size: @logo-font-size;
 				font-weight: 700;
@@ -54,6 +49,7 @@ nav {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			font-size: @nav-font-size;
 			@media @tablet {
 				width: 54%;
 			}
