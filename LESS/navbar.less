@@ -50,8 +50,27 @@ nav {
 			@media @tablet {
 				width: 54%;
 			}
+
 			@media @mobile {
 				display: none;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 200px;
+				border: 2.5px solid @teal;
+				position: absolute;
+				width: 90%;
+				.rollout-link {
+					width: 100%;
+					text-align: center;
+					padding: 30px 0;
+					font-size: @nav-font-size;
+					color: white;
+					background-color: @teal;
+					&:hover {
+						color: @teal;
+						background-color: white;
+					}
+				}
 			}
 			&:hover {
 				cursor: pointer;
@@ -62,8 +81,16 @@ nav {
 				background-color: @teal;
 				padding: 43px;
 				@media @mobile {
+					width: 100%;
+					text-align: center;
+					padding: 30px 0;
+					font-size: @nav-font-size;
 					color: white;
-					padding: 0;
+					background-color: @teal;
+					&:hover {
+						color: @teal;
+						background-color: white;
+					}
 				}
 			}
 			.main-nav-item-reverse {
@@ -80,6 +107,9 @@ nav {
 					cursor: pointer;
 				}
 			}
+		}
+		.rollout-mobile-show {
+			display: flex;
 		}
 	}
 	.navbar-scroll {
