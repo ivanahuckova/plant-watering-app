@@ -826,7 +826,6 @@ nav .navbar-scroll {
   width: 75%;
   border: 3px solid #00bab9;
   border-radius: 5px;
-  height: 20vh;
   overflow: hidden;
   padding: 20px 35px;
   margin: 25px;
@@ -859,7 +858,9 @@ nav .navbar-scroll {
 .blog-posts-container p {
   font-size: 1.8rem;
   line-height: 1.6;
-  padding: 60px 0 30px;
+}
+.blog-posts-container .text-display-none {
+  display: none;
 }
 .blog-posts-container .close {
   position: absolute;
