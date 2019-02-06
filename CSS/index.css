@@ -286,6 +286,7 @@ nav .nav-container .nav-items-container {
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 @media (max-width: 1000px) {
   nav .nav-container .nav-items-container {
@@ -315,9 +316,6 @@ nav .nav-container .nav-items-container {
     background-color: white;
   }
 }
-nav .nav-container .nav-items-container:hover {
-  cursor: pointer;
-}
 nav .nav-container .nav-items-container .main-nav-item {
   color: white;
   background-color: #00bab9;
@@ -341,14 +339,14 @@ nav .nav-container .nav-items-container .main-nav-item-reverse {
   color: #00bab9;
   background-color: white;
 }
-nav .nav-container .nav-items-mobile-menu {
+nav .nav-container .nav-button {
   display: none;
 }
 @media (max-width: 600px) {
-  nav .nav-container .nav-items-mobile-menu {
+  nav .nav-container .nav-button {
     display: flex;
   }
-  nav .nav-container .nav-items-mobile-menu i {
+  nav .nav-container .nav-button i {
     font-size: 4rem;
     cursor: pointer;
   }

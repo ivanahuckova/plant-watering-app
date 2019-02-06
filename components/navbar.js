@@ -2,7 +2,7 @@ class Dropdown {
 	constructor(element) {
 		this.element = element;
 
-		this.button = this.element.querySelector(".nav-items-mobile-menu");
+		this.button = this.element.querySelector(".nav-button");
 
 		this.content = this.element.querySelector(".nav-items-container");
 

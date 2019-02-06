@@ -47,6 +47,7 @@ nav {
 			justify-content: space-between;
 			align-items: center;
 			font-size: @nav-font-size;
+			cursor: pointer;
 			@media @tablet {
 				width: 54%;
 			}
@@ -72,9 +73,6 @@ nav {
 					}
 				}
 			}
-			&:hover {
-				cursor: pointer;
-			}
 
 			.main-nav-item {
 				color: white;
@@ -98,7 +96,7 @@ nav {
 				background-color: white;
 			}
 		}
-		.nav-items-mobile-menu {
+		.nav-button {
 			display: none;
 			@media @mobile {
 				display: flex;
