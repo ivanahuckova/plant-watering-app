@@ -14,7 +14,7 @@ Website is live and running on https://awesome-podcasts.herokuapp.com/.
 - SVG animations
 - Node.js + Express + Heroku (deployment)
 
-## Check out some parts of the website
+### Check out some parts of the website
 
 ## 🌵 Jumbotron 🌵
 
