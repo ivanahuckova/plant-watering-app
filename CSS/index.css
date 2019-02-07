@@ -457,55 +457,60 @@ nav .navbar-scroll {
   padding: 0;
   width: 100%;
 }
+/*flexbox with 1 container used for:
+- main heading/slogan
+- join us section
+- carousel
+*/
 .flex-section-container-one-item {
-  width: 100vw;
-  margin: 5% 0 5% 0;
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  margin: 5% 0 5% 0;
 }
-.flex-section-container-one-item .one-flex-item-container {
-  width: 50%;
+.flex-section-container-one-item .column-items-container {
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
   text-align: center;
 }
 @media (max-width: 1000px) {
-  .flex-section-container-one-item .one-flex-item-container {
+  .flex-section-container-one-item .column-items-container {
     width: 80%;
     margin: 70px 0;
   }
 }
 @media (max-width: 600px) {
-  .flex-section-container-one-item .one-flex-item-container {
+  .flex-section-container-one-item .column-items-container {
     width: 90%;
     margin: 50px 0;
   }
 }
-.flex-section-container-one-item .one-flex-item-container h1 {
+.flex-section-container-one-item .column-items-container h1 {
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   line-height: 1.1;
   padding-bottom: 6%;
 }
-.flex-section-container-one-item .one-flex-item-container h2 {
+.flex-section-container-one-item .column-items-container h2 {
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.4;
   padding: 6% 0;
 }
-.flex-section-container-one-item .one-flex-item-container p {
+.flex-section-container-one-item .column-items-container p {
   font-size: 1.8rem;
   line-height: 1.6;
   padding: 0 5%;
 }
-.flex-section-container-one-item .one-flex-item-container button {
+.flex-section-container-one-item .column-items-container button {
   background-color: #00bab9;
   color: white;
   text-align: center;
@@ -514,7 +519,7 @@ nav .navbar-scroll {
   border: none;
   font-size: 1.6rem;
 }
-.flex-section-container-one-item .one-flex-item-container .inline-content-container {
+.flex-section-container-one-item .column-items-container .inline-content-container {
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: row;
@@ -523,7 +528,7 @@ nav .navbar-scroll {
   padding: 6% 0 0 0;
 }
 @media (max-width: 600px) {
-  .flex-section-container-one-item .one-flex-item-container .inline-content-container {
+  .flex-section-container-one-item .column-items-container .inline-content-container {
     display: flex;
     flex-wrap: no-wrap;
     flex-direction: column;
@@ -532,35 +537,40 @@ nav .navbar-scroll {
     padding-top: 10%;
   }
 }
-.flex-section-container-one-item .one-flex-item-container .inline-content-container h3 {
+.flex-section-container-one-item .column-items-container .inline-content-container h3 {
   font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.4;
   margin: 0 4%;
 }
 @media (max-width: 600px) {
-  .flex-section-container-one-item .one-flex-item-container .inline-content-container h3 {
+  .flex-section-container-one-item .column-items-container .inline-content-container h3 {
     margin: 4%;
   }
 }
-.flex-section-container-one-item .one-flex-item-container .inline-content-container .share-item {
+.flex-section-container-one-item .column-items-container .inline-content-container .share-item {
   width: 7%;
   background-color: #e8f7f8;
   margin: 0 1%;
 }
 @media (max-width: 600px) {
-  .flex-section-container-one-item .one-flex-item-container .inline-content-container .share-item {
+  .flex-section-container-one-item .column-items-container .inline-content-container .share-item {
     width: 15%;
     margin-top: 5%;
   }
 }
-.flex-section-container-one-item .one-flex-item-container .inline-content-container .share-item img {
+.flex-section-container-one-item .column-items-container .inline-content-container .share-item img {
   max-width: 50%;
   padding: 25%;
 }
-.flex-section-container-one-item .one-flex-item-container .inline-content-container .share-item:hover {
+.flex-section-container-one-item .column-items-container .inline-content-container .share-item:hover {
   cursor: pointer;
 }
+/*
+flexbox with 2 containers used for:
+- our story short article
+- plant analytics short article
+*/
 .flex-section-container-two-items {
   display: flex;
   flex-wrap: no-wrap;
@@ -629,6 +639,10 @@ nav .navbar-scroll {
     order: 2;
   }
 }
+/*
+flexbox with 3 containers used for:
+- floating plants/newsletter section
+*/
 .flex-section-container-three-items {
   display: flex;
   flex-wrap: no-wrap;
@@ -645,12 +659,12 @@ nav .navbar-scroll {
   }
 }
 .flex-section-container-three-items .flex-mid-item-container {
-  width: 30%;
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 30%;
   text-align: center;
 }
 @media (max-width: 1000px) {
@@ -688,12 +702,12 @@ nav .navbar-scroll {
   font-size: 1.6rem;
 }
 .flex-section-container-three-items .flex-floating-items-container {
-  width: 30%;
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 30%;
   margin: 0 2.5%;
 }
 @media (max-width: 1000px) {
@@ -869,7 +883,7 @@ nav .navbar-scroll {
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.4;
-  padding-bottom: 4%;
+  padding-bottom: 5%;
 }
 @media (max-width: 600px) {
   .carousel-container h2 {

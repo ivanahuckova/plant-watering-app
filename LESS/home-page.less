@@ -1,4 +1,5 @@
-//JUMBOTRONE SECTION
+//LANDING PAGE LESS
+//main jumbotron section
 .jumbotron-container {
 	background-color: @light-teal;
 	width: 100vw;
@@ -21,15 +22,18 @@
 	}
 }
 
-//MAIN HEADING & JOIN US SECTION & CAROUSEL
+/*flexbox with 1 container used for:
+- main heading/slogan
+- join us section
+- carousel
+*/
 .flex-section-container-one-item {
+	.display-flex(no-wrap, row, center, center);
 	width: 100vw;
 	margin: 5% 0 5% 0;
-	.display-flex(no-wrap, row, center, center);
-
-	.one-flex-item-container {
-		width: 50%;
+	.column-items-container {
 		.display-flex(no-wrap, column, center, center);
+		width: 50%;
 		text-align: center;
 		@media @tablet {
 			width: 80%;
@@ -72,6 +76,7 @@
 					margin: 4%;
 				}
 			}
+			//logos of social networks
 			.share-item {
 				width: 7%;
 				background-color: @light-teal;
@@ -92,7 +97,11 @@
 	}
 }
 
-//FLEXBOX 2 CONTAINERS
+/*
+flexbox with 2 containers used for:
+- our story short article
+- plant analytics short article
+*/
 .flex-section-container-two-items {
 	.display-flex(no-wrap, row, space-between, center);
 	padding: 0 6%;
@@ -101,7 +110,6 @@
 		justify-content: center;
 		text-align: center;
 	}
-
 	.flex-item {
 		width: 45%;
 		@media @tablet {
@@ -111,7 +119,6 @@
 		@media @mobile {
 			width: 100%;
 		}
-
 		img {
 			width: 100%;
 			padding: 10% 0 0 0;
@@ -148,7 +155,11 @@
 	}
 }
 
-//FLEXBOX 3 CONTAINERS
+/*
+flexbox with 3 containers used for:
+- floating plants/newsletter section
+*/
+
 .flex-section-container-three-items {
 	.display-flex(no-wrap, row, space-between, center);
 	padding: 0;
@@ -159,8 +170,8 @@
 	}
 
 	.flex-mid-item-container {
-		width: 30%;
 		.display-flex(no-wrap, column, center, center);
+		width: 30%;
 		text-align: center;
 		@media @tablet {
 			width: 95%;
@@ -184,8 +195,8 @@
 	}
 
 	.flex-floating-items-container {
-		width: 30%;
 		.display-flex(no-wrap, row, space-between, center);
+		width: 30%;
 		margin: 0 2.5%;
 
 		@media @tablet {
@@ -200,6 +211,7 @@
 				display: none;
 			}
 		}
+		//different margin-tops for each plants
 		.plant1 {
 			margin-top: -70%;
 			animation: moveUpAndDown 8s ease-out infinite;
