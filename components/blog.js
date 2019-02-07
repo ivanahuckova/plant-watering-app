@@ -8,7 +8,7 @@ class Blog {
 		});
 	}
 	expandBlog() {
-		this.post.classList.toggle("text-display-none");
+		this.post.classList.toggle("text-display-flex");
 	}
 }
 const blogs = document.querySelectorAll(".blog-post");
