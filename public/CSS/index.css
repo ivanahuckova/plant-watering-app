@@ -773,10 +773,12 @@ flexbox with 3 containers used for:
     margin-top: 160px;
   }
 }
-.blog-site-heading-container h2 {
-  font-size: 3.5rem;
+.blog-site-heading-container h1 {
+  font-size: 4rem;
   font-weight: bold;
-  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+  width: 70%;
 }
 .blog-site-image-container {
   display: flex;
@@ -810,8 +812,8 @@ flexbox with 3 containers used for:
 }
 .blog-posts-container .blog-post {
   width: 75%;
-  border: 3px solid #00bab9;
-  border-radius: 5px;
+  border: 2px solid #00bab9;
+  border-radius: 2px;
   padding: 20px 35px;
   margin: 25px;
   box-sizing: border-box;
@@ -907,8 +909,8 @@ flexbox with 3 containers used for:
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #00bab9;
-  background-color: white;
+  color: white;
+  background-color: transparent;
   font-size: 3rem;
   border-radius: 50%;
   position: absolute;
@@ -924,8 +926,8 @@ flexbox with 3 containers used for:
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: white;
-  background-color: #00bab9;
+  color: teal;
+  background-color: transparent;
 }
 @media (max-width: 1000px) {
   .carousel .left-button:hover,
