@@ -1,7 +1,7 @@
 // HEADING
-.main-site-heading-container {
+.blog-site-heading-container {
 	margin-top: 140px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	padding: 0 5%;
 	@media @tablet {
 		margin-top: 140px;
@@ -16,6 +16,21 @@
 	}
 }
 
+.blog-site-image-container {
+	.display-flex(no-wrap, row, center, center);
+	text-align: center;
+	width: 100%;
+	img {
+		width: 30%;
+		padding-bottom: 40px;
+		@media @tablet {
+			width: 50%;
+		}
+		@media @mobile {
+			width: 80%;
+		}
+	}
+}
 //BLOG POSTS
 .blog-posts-container {
 	.display-flex(no-wrap, column, center, center);
@@ -32,11 +47,9 @@
 		background-color: @light-teal;
 		@media @tablet {
 			width: 75%;
-			height: 20vh;
 		}
 		@media @mobile {
 			width: 95%;
-			height: 25vh;
 		}
 	}
 	h3 {

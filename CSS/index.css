@@ -789,9 +789,9 @@ nav .navbar-scroll {
   margin-top: -70%;
   animation: moveUpAndDown 4s ease-out infinite;
 }
-.main-site-heading-container {
+.blog-site-heading-container {
   margin-top: 140px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 0 5%;
   display: flex;
   flex-wrap: no-wrap;
@@ -801,19 +801,42 @@ nav .navbar-scroll {
   text-align: center;
 }
 @media (max-width: 1000px) {
-  .main-site-heading-container {
+  .blog-site-heading-container {
     margin-top: 140px;
   }
 }
 @media (max-width: 600px) {
-  .main-site-heading-container {
+  .blog-site-heading-container {
     margin-top: 160px;
   }
 }
-.main-site-heading-container h2 {
+.blog-site-heading-container h2 {
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.4;
+}
+.blog-site-image-container {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.blog-site-image-container img {
+  width: 30%;
+  padding-bottom: 40px;
+}
+@media (max-width: 1000px) {
+  .blog-site-image-container img {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .blog-site-image-container img {
+    width: 80%;
+  }
 }
 .blog-posts-container {
   display: flex;
@@ -836,13 +859,11 @@ nav .navbar-scroll {
 @media (max-width: 1000px) {
   .blog-posts-container .blog-post {
     width: 75%;
-    height: 20vh;
   }
 }
 @media (max-width: 600px) {
   .blog-posts-container .blog-post {
     width: 95%;
-    height: 25vh;
   }
 }
 .blog-posts-container h3 {
