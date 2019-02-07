@@ -193,9 +193,6 @@ a {
 .light-teal-bckgnd {
   background-color: #e8f7f8;
 }
-.margin-bottom-5 {
-  margin-bottom: 5%;
-}
 @media (max-width: 600px) {
   .mobile-display-none {
     display: none;
@@ -373,12 +370,12 @@ nav .navbar-scroll {
   background-color: white;
 }
 .footer-container {
-  margin: 5% 0 -2% 2%;
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 5% 0 -2% 2%;
   padding: 0 10%;
   height: 10vh;
 }
