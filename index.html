@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- css -->
 		<link rel="stylesheet" href="CSS/index.css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
 		<link
@@ -12,19 +13,22 @@
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 			crossorigin="anonymous"
 		/>
+		<!-- scripts -->
 		<script src="index.js" async></script>
 		<script src="animations.js" async></script>
 		<script src="components/carousel.js" async></script>
 		<script src="components/dropdown.js" async></script>
 		<script src="components/blog.js" async></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" async></script>
+			<!-- title -->
 		<title>🌵 Planto - The plant watering app</title>
 	</head>
 	<body>
-		<!-- HEADER -->
+		<!-- header -->
 		<header>
-			<!-- NABAR -->
+			<!-- navbar -->
 			<nav>
+				<!-- navbar - logo container -->
 				<div class="nav-container">
 					<div class="logo-container">
 						<h2 id="logo"><a href="index.html"></a>Planto</a></h2>
@@ -34,24 +38,26 @@
 							<div class="nav-slogan">tool</div>
 						</div>
 					</div>
+					<!-- navbar - items container -->
 					<div class="nav-items-container">
 						<div class="rollout-link"><a href="#">App</a></div>
 						<div class="rollout-link"><a href="blog.html">Blog</a></div>
 						<div class="rollout-link"><a href="#">Login</a></div>
 						<div class="main-nav-item rollout-link" id="main-nav-item"><a href="#">Join Us</a></div>
 					</div>
+					<!-- navbar - button showing navbar items for mobile screen -->
 					<div class="nav-button">
 						<i class="fas fa-bars"></i>
 					</div>
 				</div>
 			</nav>
 
-			<!-- JUMBOTRON -->
+			<!-- jumbotron with animates svg -->
 			<div class="jumbotron-container">
 				<img src="/assets/illustrations/jumbotron-img-animation.svg" alt="Calendar for watering of plants" />
 			</div>
 
-			<!-- MAIN HEADING -->
+			<!-- main heading/main information about Planto -->
 			<div class="flex-section-container-one-item">
 				<div class="column-items-container">
 					<h1>Never forget to water your plants again!</h1>
@@ -75,7 +81,7 @@
 			</div>
 		</header>
 
-		<!-- SECTION 1 -->
+		<!-- container with information about Planto story + illustration  -->
 		<section class="flex-section-container-two-items">
 			<div class="flex-item flex-text">
 				<h2>Join thousands of others...</h2>
@@ -90,7 +96,7 @@
 			</div>
 		</section>
 
-		<!-- SECTION 2 CAROUSEL -->
+		<!-- photo carousel -->
 		<section class="carousel-container">
 			<h2>Check out our 🌵 plants</h2>
 			<div class="carousel">
@@ -104,7 +110,7 @@
 			</div>
 		</section>
 
-		<!-- SECTION 3 -->
+		<!-- container with information about analytics feature + illustration  -->
 		<section class="flex-section-container-two-items">
 			<div class="flex-item flex-img">
 				<img src="/assets/illustrations/analytics.svg" alt="Arranging of flowers" />
@@ -119,7 +125,7 @@
 			</div>
 		</section>
 
-		<!-- SECTION 4 -->
+		<!-- newsletter/floating plants in bubble section -->
 		<section class="flex-section-container-three-items">
 			<div class="flex-floating-items-container">
 				<img class="plant1" src="assets/plants/plant1.png" alt="Plant" />
@@ -143,7 +149,7 @@
 			</div>
 		</section>
 
-		<!-- SECTION 5 -->
+		<!-- join us section -->
 		<section class="flex-section-container-one-item light-teal-bckgnd">
 			<div class="column-items-container">
 				<h2>Ready to join us?</h2>
@@ -155,6 +161,7 @@
 			</div>
 		</section>
 
+		<!-- footer container -->
 		<footer>
 			<div class="footer-container">
 				<div class="footer-item">© Copyright 2019 <a href="">Ivana Huckova</a>. All rights reserved.</div>
@@ -163,7 +170,7 @@
 
 			<img id="plant-img" src="assets/symbols/plant.png" alt="Plant animation" />
 		</footer>
-		<!-- MOUSE FOLLOWING ITEM -->
+		<!-- mouse following heart -->
 		<div id="mouse-move-item" class="js--move-heart"></div>
 	</body>
 </html>
