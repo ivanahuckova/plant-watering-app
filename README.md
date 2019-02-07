@@ -4,6 +4,8 @@ Welcome! 👋 This repository contains the source code and content for a marketi
 
 Website is live and running on https://planto-the-plant-watering-app.herokuapp.com/.
 
+You can check my trello board for this project here: https://trello.com/b/KNA46lWV/planto/.
+
 ## Used Technology and Tools
 
 - CSS (flexbox, box model, positioning, animations, responsivness)
