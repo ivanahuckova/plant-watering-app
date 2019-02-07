@@ -34,17 +34,6 @@
     top: 25px;
   }
 }
-@keyframes changeColor {
-  0% {
-    color: black;
-  }
-  30% {
-    color: #00bab9;
-  }
-  70% {
-    color: white;
-  }
-}
 @keyframes fade {
   0% {
     opacity: 0;
