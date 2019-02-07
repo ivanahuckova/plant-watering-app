@@ -266,7 +266,7 @@ nav .nav-container:hover {
 nav .nav-container .logo-container {
   width: 20%;
   display: flex;
-  background-image: url(/assets/heart-teal.png);
+  background-image: url(/assets/symbols/heart-teal.png);
   background-size: 20px;
   background-repeat: no-repeat;
 }
@@ -431,16 +431,19 @@ nav .navbar-scroll {
   width: 100vw;
   height: 70vh;
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
 }
 @media (max-width: 1000px) {
   .jumbotron-container {
     margin-top: 100px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 600px) {
   .jumbotron-container {
     margin-top: 120px;
+    margin-bottom: 0;
   }
 }
 .jumbotron-container img {
@@ -519,13 +522,19 @@ nav .navbar-scroll {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
   }
 }
 .flex-section-container-one-item .one-flex-item-container .inline-content-container h3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.4;
   margin: 0 4%;
+}
+@media (max-width: 600px) {
+  .flex-section-container-one-item .one-flex-item-container .inline-content-container h3 {
+    margin: 4%;
+  }
 }
 .flex-section-container-one-item .one-flex-item-container .inline-content-container .share-item {
   width: 7%;
@@ -544,68 +553,6 @@ nav .navbar-scroll {
 }
 .flex-section-container-one-item .one-flex-item-container .inline-content-container .share-item:hover {
   cursor: pointer;
-}
-.flex-section-container-one-item .carousel-container {
-  display: flex;
-  flex-wrap: no-wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  text-align: center;
-  padding: 5% 0;
-}
-.flex-section-container-one-item .carousel-container h2 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  line-height: 1.4;
-  padding-bottom: 5%;
-  text-align: center;
-}
-.flex-section-container-one-item .carousel-container .image-container {
-  width: 80%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-wrap: no-wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-@media (max-width: 600px) {
-  .flex-section-container-one-item .carousel-container .image-container {
-    width: 100%;
-  }
-}
-.flex-section-container-one-item .carousel-container .image-container img {
-  display: none;
-}
-.flex-section-container-one-item .carousel-container .image-container img .img-active {
-  display: flex;
-  width: 60%;
-  animation: fade 1s linear;
-}
-@media (max-width: 1000px) {
-  .flex-section-container-one-item .carousel-container .image-container img .img-active {
-    max-width: 90%;
-  }
-}
-.flex-section-container-one-item .carousel-container .image-container #left-arrow {
-  width: 3%;
-}
-.flex-section-container-one-item .carousel-container .image-container #left-arrow:hover {
-  cursor: pointer;
-}
-.flex-section-container-one-item .carousel-container .image-container #right-arrow {
-  width: 3%;
-}
-.flex-section-container-one-item .carousel-container .image-container #right-arrow:hover {
-  cursor: pointer;
-}
-@media (max-width: 1000px) {
-  .flex-section-container-one-item .carousel-container .image-container {
-    width: 89%;
-  }
 }
 .flex-section-container-two-items {
   display: flex;
@@ -682,11 +629,12 @@ nav .navbar-scroll {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin: 5% 0;
+  margin: 10% 0;
 }
 @media (max-width: 1000px) {
   .flex-section-container-three-items {
     flex-wrap: wrap;
+    margin: 5% 0;
   }
 }
 .flex-section-container-three-items .flex-mid-item-container {
@@ -867,7 +815,7 @@ nav .navbar-scroll {
   }
 }
 .blog-posts-container h3 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -910,14 +858,25 @@ nav .navbar-scroll {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10% 0;
   text-align: center;
+  padding: 5% 0;
+  margin: 3% 0;
+}
+@media (max-width: 1000px) {
+  .carousel-container {
+    margin: 10% 0;
+  }
 }
 .carousel-container h2 {
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.4;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
+}
+@media (max-width: 600px) {
+  .carousel-container h2 {
+    padding-bottom: 8%;
+  }
 }
 .carousel {
   width: 100%;
@@ -963,7 +922,7 @@ nav .navbar-scroll {
   color: white;
   background-color: #00bab9;
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .carousel .left-button:hover,
   .carousel .right-button:hover {
     background-color: transparent;
