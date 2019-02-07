@@ -283,11 +283,16 @@ nav .nav-container .logo-container h2 {
   font-size: 4rem;
   font-weight: 700;
   padding: 0 10px 0 21px;
+  color: black;
+  cursor: pointer;
 }
 @media (max-width: 600px) {
   nav .nav-container .logo-container h2 {
     padding-bottom: 25px;
   }
+}
+nav .nav-container .logo-container .teal-logo {
+  color: #00bab9;
 }
 nav .nav-container .nav-items-container {
   width: 40%;

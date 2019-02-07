@@ -20,10 +20,7 @@ function followMouse() {
 //Function to change color of logo when clicked
 const logo = document.getElementById("logo");
 logo.addEventListener("click", function() {
-	logo.classList.add("animation-class");
-	setTimeout(function() {
-		logo.classList.remove("animation-class");
-	}, 3000);
+	logo.classList.toggle("teal-logo");
 });
 
 //Adding hover animation to each button
