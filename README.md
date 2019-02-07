@@ -6,16 +6,24 @@ Website is live and running on https://awesome-podcasts.herokuapp.com/.
 
 ## Used Technology and Tools
 
-.._ CSS (flexbox, box model, positioning, animations, responsivness)
-.._ LESS (mixins, variables)
-.._ HTML (semantic html)
-.._ Javascript (DOM, components, functions, objects, array and array methods)
-.._ Greensock (animations)
-.._ SVG animations
-..\_ Node.js + Express + Heroku (deployment)
+- CSS (flexbox, box model, positioning, animations, responsivness)
+- LESS (mixins, variables)
+- HTML (semantic html)
+- Javascript (DOM, components, functions, objects, array and array methods)
+- Greensock (animations)
+- SVG animations
+- Node.js + Express + Heroku (deployment)
 
-## Check out the website
+## Check out some parts of the website
+
+### Jumbotrone
 
 ![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design1.png)
-![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design2.png)
+
+### Introduction
+
 ![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design3.png)
+
+### Newsletter section
+
+![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design2.png)
