@@ -18,12 +18,12 @@ Website is live and running on https://planto-the-plant-watering-app.herokuapp.c
 
 ### 🌵 Jumbotron 🌵
 
-![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design1.png)
+![Website](public/assets/design1.png)
 
 ### 🌿 Introduction 🌿
 
-![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design3.png)
+![Website](public/assets/design2.png)
 
 ### 🌱 Newsletter section 🌱
 
-![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design2.png)
+![Website](public/assets/design3.png)
