@@ -16,14 +16,14 @@ Website is live and running on https://awesome-podcasts.herokuapp.com/.
 
 ## Check out some parts of the website
 
-### Jumbotrone
+## 🌵 Jumbotron 🌵
 
 ![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design1.png)
 
-### Introduction
+## 🌿 Introduction 🌿
 
 ![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design3.png)
 
-### Newsletter section
+## 🌱 Newsletter section 🌱
 
 ![Website](https://github.com/ivanahuckova/plant-watering-app/blob/svg-animations-and-deploying/assets/design/design2.png)
