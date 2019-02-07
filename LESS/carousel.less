@@ -6,7 +6,6 @@
 	@media @tablet {
 		margin: 10% 0;
 	}
-
 	h2 {
 		.h2-font-style();
 		padding-bottom: 4%;
@@ -17,23 +16,20 @@
 }
 
 .carousel {
-	width: 100%;
 	.display-flex(no-wrap, row, center, center);
 	max-height: 80vh;
+	max-width: 70%;
 	position: relative;
 	overflow: hidden;
-	max-width: 70%;
-
 	@media @mobile {
 		max-width: 95%;
 	}
-
 	.left-button,
 	.right-button {
 		.display-flex(no-wrap, row, center, center);
 		color: @teal;
 		background-color: white;
-		font-size: 40px;
+		font-size: 3rem;
 		border-radius: 50%;
 		position: absolute;
 		width: 50px;
@@ -73,14 +69,5 @@
 	.img-active {
 		display: flex;
 		animation: fade 1s linear;
-	}
-}
-
-@keyframes fade {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
 	}
 }
