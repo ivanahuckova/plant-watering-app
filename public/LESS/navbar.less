@@ -1,0 +1,122 @@
+//NAVBAR LESS
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+
+	.nav-container {
+		height: 100px;
+		.display-flex(no-wrap, row, space-between, center);
+		padding: 0 5%;
+		background-color: @light-teal;
+		font-weight: bold;
+		&:hover {
+			cursor: pointer;
+		}
+
+		@media @mobile {
+			height: 120px;
+		}
+
+		.logo-container {
+			width: 20%;
+			display: flex;
+			background-image: url(/assets/symbols/heart-teal.png);
+			background-size: 20px;
+			background-repeat: no-repeat;
+			.nav-slogan {
+				font-size: @nav-font-size;
+			}
+			h2 {
+				font-size: @logo-font-size;
+				font-weight: 700;
+				padding: 0 10px 0 21px;
+				color: black;
+				cursor: pointer;
+				@media @mobile {
+					padding-bottom: 25px;
+				}
+			}
+			.teal-logo {
+				color: @teal;
+			}
+		}
+
+		.nav-items-container {
+			width: 40%;
+			.display-flex(no-wrap, row, space-between, center);
+			font-size: @nav-font-size;
+			cursor: pointer;
+			@media @tablet {
+				width: 54%;
+			}
+
+			@media @mobile {
+				//dropdown menu (dropdown.js component)
+				display: none;
+				position: absolute;
+				flex-direction: column;
+				align-items: center;
+				width: 90%;
+				margin-top: 200px;
+				border: 2.5px solid @teal;
+				.rollout-link {
+					width: 100%;
+					padding: 30px 0;
+					text-align: center;
+					font-size: @nav-font-size;
+					color: white;
+					background-color: @teal;
+					&:hover {
+						color: @teal;
+						background-color: white;
+					}
+				}
+			}
+			a {
+				&:hover {
+					color: @teal;
+				}
+			}
+
+			.main-nav-item {
+				color: white;
+				background-color: @teal;
+				padding: 43px;
+				@media @mobile {
+					width: 100%;
+					text-align: center;
+					padding: 30px 0;
+					font-size: @nav-font-size;
+					color: white;
+					background-color: @teal;
+					&:hover {
+						color: @teal;
+						background-color: white;
+					}
+				}
+			}
+			.main-nav-item-reverse {
+				color: @teal;
+				background-color: white;
+			}
+		}
+		.nav-button {
+			display: none;
+			@media @mobile {
+				display: flex;
+				i {
+					font-size: 4rem;
+					cursor: pointer;
+				}
+			}
+		}
+		.rollout-mobile-show {
+			display: flex;
+		}
+	}
+	.navbar-scroll {
+		background-color: white;
+	}
+}
